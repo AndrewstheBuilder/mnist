@@ -50,6 +50,7 @@ class FeedForwardNetwork:
         if test_data: 
             n_test = len(test_data)
         n = len(training_data)
+        print('Start matrized version of updating mini batches')
         tic = time.perf_counter()
         for j in range(epochs):
             random.shuffle(training_data)
